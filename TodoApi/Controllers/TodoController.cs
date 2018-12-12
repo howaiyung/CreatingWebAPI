@@ -71,5 +71,19 @@ namespace TodoApi.Controllers
 
             return NoContent();
         }
+
+        /* [HttpPatchAttribute("{id}")]
+        public async Task<IActionResult> PatchAttributeTodoItem(long id, TodoItem todoItem)
+        {
+            if (id != todoItem.Id)
+            {
+                return BadRequest();
+            }
+
+            _context.Entry(todoItem).State = EntityState.Modified;
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }*/
     }
 }
