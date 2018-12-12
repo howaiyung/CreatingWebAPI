@@ -1,0 +1,2 @@
+To test the Web API for Net Core 2.0 as of Dec 12, 2018
+https://www.getpostman.com/apps
