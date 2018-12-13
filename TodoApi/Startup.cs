@@ -12,6 +12,8 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.EntityFrameworkCore;
 using TodoApi.Models;
+using Microsoft.Extensions.FileProviders;
+using System.IO;
 
 namespace TodoApi
 {
@@ -46,6 +48,10 @@ namespace TodoApi
 
             app.UseHttpsRedirection();
             app.UseMvc();
+            app.UseStaticFiles();
+            app.UseDefaultFiles();
         }
+
+        
     }
 }
